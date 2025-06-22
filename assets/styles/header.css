@@ -13,6 +13,7 @@
     padding-left: 13.938rem;
     padding-right: 13.938rem;
     border-bottom: 2px solid var(--color-border);
+    z-index: 100;
 }
 
 .primary-header a {
