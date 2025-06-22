@@ -1,0 +1,31 @@
+/* variables for css */ 
+
+:root {
+
+    /* colors */
+
+    /* Background */
+    --color-bg-primary: #1A1A1A;
+    --color-bg-secondary: #303030;
+
+    /* Accent */
+    --color-primary: #C1121F;
+    --color-secondary: #F26419;
+    --color-accent: #960875;
+
+    /* Text */
+    --color-text-primary: #FFFFFF;
+    --color-text-secondary: #AAAAAA;
+
+    /* fonts */
+    --font-family-heading: "Anton SC", "Inter", "Arial", sans-serif;
+    --font-family-body: "Inter",  "Arial" , sans-serif;
+
+    /* font weight */
+
+    /* font size */
+
+    /* letter spacing */
+
+    /* line height */
+}
