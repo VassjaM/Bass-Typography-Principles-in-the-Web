@@ -1,0 +1,13 @@
+/* styles for bento grid image */
+
+.info-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 13.75rem;
+}
+
+.info-box img {
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+}
