@@ -2,11 +2,37 @@
 
 .title {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: left;
     width: 100%;
-}
-
-.title h1 {
     margin-top: 13.75rem;
     margin-bottom: 13.75rem;
+}
+
+.title-inner {
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+}
+
+.title .title-inner h1 {
+    display: flex;
+    flex-wrap: wrap;
+    white-space: pre-wrap;
+}
+
+/* animation for the javascript created span */
+.title .title-inner h1 span {
+    display: inline-block;
+    transform: translateY(100%);
+    opacity: 0;
+    animation: appear 0.4s ease-out forwards;
+}
+
+@keyframes appear {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
