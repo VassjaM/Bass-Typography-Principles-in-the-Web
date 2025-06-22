@@ -1,5 +1,7 @@
 // Script for animated title text in landing page
 
+// converts html elements into spans and add animation delay to each letter before combining them
+
   function animateLine(id, delayOffset = 0) {
     const line = document.getElementById(id); //get the line element by ID
     const letters = line.textContent.split(''); //split the line text into individual letters
