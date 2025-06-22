@@ -16,6 +16,14 @@ li, a {
     text-decoration: none;
 }
 
+h1 {
+    font-family: var(--font-family-heading);
+    color: var(--color-text-primary);
+    font-size: var(--font-size-title-heading);
+    font-weight: var(--font-weight-middle);
+    line-height: 1.15;
+}
+
 p { 
     hyphens: auto; 
   }

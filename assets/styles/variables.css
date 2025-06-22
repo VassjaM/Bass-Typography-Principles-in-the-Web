@@ -28,6 +28,7 @@
     --font-weight-middle: 300;
 
     /* font size */
+    --font-size-title-heading: 10rem; /* font size for headings */
 
     /* letter spacing */
     --font-ls-navigation: -1px; /* letter spacing for navigation links */
