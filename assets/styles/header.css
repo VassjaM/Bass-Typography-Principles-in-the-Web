@@ -1,0 +1,26 @@
+/* header and navigation styles */
+
+.primary-header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 4rem;
+    background-color: var(--color-bg-primary);
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 13.938rem;
+    padding-right: 13.938rem;
+}
+
+.primary-header a {
+    color: var(--color-text-primary);
+    font-family: var(--font-family-body);
+    font-size: 1.25rem;
+    font-weight: var(--font-weight-middle);
+}
+
+#nav-text {
+    letter-spacing: var(--font-ls-navigation);
+}
