@@ -12,6 +12,7 @@
     flex-direction: row;
     padding-left: 13.938rem;
     padding-right: 13.938rem;
+    border-bottom: 2px solid var(--color-border);
 }
 
 .primary-header a {

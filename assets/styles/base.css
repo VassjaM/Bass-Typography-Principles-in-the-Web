@@ -6,6 +6,12 @@ html {
     font-size: 1rem;
 }
 
+html,
+body {
+    margin: 0;
+    background-color: var(--color-bg-primary);
+}
+
 li, a {
     text-decoration: none;
 }

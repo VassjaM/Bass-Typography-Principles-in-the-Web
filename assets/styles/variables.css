@@ -4,18 +4,21 @@
 
     /* colors */
 
-    /* Background */
-    --color-bg-primary: #1A1A1A;
-    --color-bg-secondary: #303030;
+        /* Background */
+        --color-bg-primary: #1A1A1A;
+        --color-bg-secondary: #303030;
 
-    /* Accent */
-    --color-primary: #C1121F;
-    --color-secondary: #F26419;
-    --color-accent: #960875;
+        /* Accent */
+        --color-primary: #C1121F;
+        --color-secondary: #F26419;
+        --color-accent: #960875;
 
-    /* Text */
-    --color-text-primary: #FFFFFF;
-    --color-text-secondary: #AAAAAA;
+        /* Text */
+        --color-text-primary: #FFFFFF;
+        --color-text-secondary: #AAAAAA;
+
+        /* Border */
+        --color-border: #AFAFAF;
 
     /* fonts */
     --font-family-heading: "Anton SC", "Inter", "Arial", sans-serif;
