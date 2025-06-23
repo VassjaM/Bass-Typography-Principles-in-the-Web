@@ -21,9 +21,20 @@ h1 {
     color: var(--color-text-primary);
     font-size: var(--font-size-title-heading);
     font-weight: var(--font-weight-middle);
-    line-height: 1.15;
+    line-height: var(--line-height-title);
+}
+
+h2 {
+    font-family: var(--font-family-heading);
+    color: var(--color-text-primary);
+    font-size: var(--font-size-text-heading);
+    font-weight: var(--font-weight-middle);
+    line-height: var(--line-height-title);
+    padding-bottom: 2.375rem;
 }
 
 p { 
+    font-family: var(--font-family-body);
+    line-height: var(--line-height-paragraph);
     hyphens: auto; 
   }

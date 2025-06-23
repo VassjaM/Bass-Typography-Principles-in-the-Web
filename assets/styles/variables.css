@@ -26,12 +26,19 @@
 
     /* font weight */
     --font-weight-middle: 300;
+    --font-weight-regular: 400;
 
     /* font size */
-    --font-size-title-heading: 10rem; /* font size for headings */
+    --font-size-title-heading: 10rem;
+    --font-size-text-heading: 4.375rem;
+    --font-size-text: 1.563rem;
+    --font-size-prefix: 1.563rem;
 
     /* letter spacing */
-    --font-ls-navigation: -1px; /* letter spacing for navigation links */
+    --font-ls-navigation: -1px;
+    --font-ls-prefix: 0.01em;
 
     /* line height */
+    --line-height-title: 1.15;
+    --line-height-paragraph: 1.70;
 }

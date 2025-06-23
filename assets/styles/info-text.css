@@ -1,0 +1,26 @@
+/* styles for information text with title and text */
+
+.info-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 13.75rem;
+    margin-bottom: 13.75rem;
+}
+
+.info-text-inner {
+    max-width: 950px;
+    text-align: center;
+}
+
+.prefix {
+      font-size: var(--font-size-prefix);
+      letter-spacing: var(--font-ls-prefix);
+}
+
+.info-text-paragraph {
+    color: var(--color-text-primary);
+    font-size: var(--font-size-text);
+    font-weight: var(--font-weight-regular);
+}
