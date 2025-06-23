@@ -33,6 +33,13 @@ h2 {
     padding-bottom: 2.375rem;
 }
 
+h3 {
+    font-family: var(--font-family-heading);
+    color: var(--color-text-primary);
+    font-weight: var(--font-weight-middle);
+    line-height: var(--line-height-title);
+}
+
 p { 
     font-family: var(--font-family-body);
     line-height: var(--line-height-paragraph);

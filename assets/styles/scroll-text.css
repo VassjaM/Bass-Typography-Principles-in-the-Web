@@ -1,0 +1,29 @@
+/* styles for scrollable animated principles */
+
+.scroll-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.scroll-text {
+    white-space: nowrap;
+    will-change: transform;
+    padding-bottom: 2rem;
+    transition: transform 0.1s linear, opacity 0.6s ease-out;
+    opacity: 0.1;
+}
+
+.scroll-text .right {
+    transform: translateX(400%);
+}
+
+.scroll-text .left {
+    transform: translateX(-400%);
+}
+
+.principle {
+    font-size: var(--font-size-principle);
+}
