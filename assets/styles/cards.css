@@ -1,0 +1,123 @@
+/* styles vor the cards */
+
+.card-outer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.card-inner {
+    max-width: 950px;
+    vertical-align: middle;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-areas:
+        "title title"
+        "example info";
+    gap: 20px;
+}
+
+/* title card */
+.card-top {
+    grid-area: title;
+    background-color: var(--color-bg-cards);
+    padding-top: 4.625rem;
+    padding-bottom: 4.625rem;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.card-top:hover {
+    outline: 3px solid var(--color-bg-cards);
+}
+
+
+/* first example card */
+.card-left-first {
+    grid-area: example;
+    background-color: var(--color-bg-cards);
+    border-radius: 30px;
+    height: 550px;
+    width: 465px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    padding: 20px;
+}
+
+.card-left-first:hover {
+    outline: 3px solid var(--color-bg-cards);
+}
+
+.glitch-group {
+  transform: rotate(27deg) translateX(10px);
+  display: flex;
+  flex-direction: column;
+}
+
+.glitch-layer {
+    font-family: var(--font-family-heading);   
+    color: var(--color-text-secondary);
+    font-size: 7rem;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-bottom: 0.6rem;
+}
+
+.glitch-layer.highlight {
+  color: var(--color-primary);
+  animation: glitchMove 1.1s infinite ease-in-out;
+}
+
+@keyframes glitchMove {
+  0%, 100% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+}
+
+
+/* information card */
+.card-right{
+    grid-area: info;
+    background-color: var(--color-bg-cards);
+    border-radius: 30px;
+    height: 550px;
+}
+
+.card-right:hover {
+    outline: 3px solid var(--color-bg-cards);
+}
+
+.card-right p {
+    font-family: var(--font-family-body);
+    color: var(--color-text-primary);
+}
+
+.card-right .head {
+    font-size: var(--font-size-paratext);
+    font-weight: var(--font-weight-bold);
+    padding-left: 2.25rem;
+    padding-top: 2.25rem;
+}
+
+.card-right .paratext {
+    font-size: var(--font-size-text);
+    font-weight: var(--font-weight-light);
+    line-height: var(--line-height-text);
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+    letter-spacing: var(--font-ls-text);
+}
+
