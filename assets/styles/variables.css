@@ -35,6 +35,7 @@
     --font-size-title-heading: 10rem;
     --font-size-principle: 6.25rem;
     --font-size-text-heading: 4.375rem;
+    --font-size-footer-text: 3.125rem;
     --font-size-paratext: 1.875rem;
     --font-size-text: 1.563rem;
     --font-size-prefix: 1.563rem;
@@ -43,6 +44,7 @@
     --font-ls-navigation: -1px;
     --font-ls-prefix: 0.01em;
     --font-ls-text: 2%;
+    --font-ls-footer: 0.15em;
 
     /* line height */
     --line-height-title: 1.15;

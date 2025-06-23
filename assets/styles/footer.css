@@ -1,0 +1,34 @@
+/* styles for the footer */
+
+.footer-outer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-top: 2px solid var(--color-border);
+    height: 600px;
+}
+
+.big-footer {
+    font-size: var(--font-size-text-heading);
+    color: var(--color-text-primary);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: var(--font-ls-navigation);
+    padding-bottom: 10px;
+}
+
+.middle-footer {
+    font-size: var(--font-size-footer-text);
+    color: var(--color-text-primary);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-title);
+    padding-bottom: 105px;
+}
+
+.small-footer {
+    font-size: var(--font-size-text);
+    color: var(--color-text-primary);
+    font-weight: var(--font-weight-light);
+    letter-spacing: var(--font-ls-footer);
+}
