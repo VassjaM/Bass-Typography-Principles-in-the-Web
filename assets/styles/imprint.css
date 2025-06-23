@@ -1,0 +1,26 @@
+/* styles for imprint page */
+
+.contact-information {
+    margin-left: 13.75rem;
+    margin-right: 13.75rem;
+}
+
+.contact-information h2 {
+    padding-bottom: 5.313rem;
+}
+
+.pre {
+    font-size: var(--font-size-prefix);
+    letter-spacing: var(--font-ls-prefix);
+}
+
+.imprint-text {
+    margin-left: 13.75rem;
+    margin-right: 13.75rem;
+}
+
+.imprint-text p {
+    color: var(--color-text-primary);
+    font-size: var(--font-size-text);
+    font-weight: var(--font-weight-middle);
+}
