@@ -1,5 +1,7 @@
 // script for first example in symbolism-js
 
+/* inspired by Florin Pop – Codepen Animation: https://codepen.io/FlorinPop17 */
+
 const spans = document.querySelectorAll('.interactive-word span');
 const targetIndex = 5; // index of the automated animation target
 

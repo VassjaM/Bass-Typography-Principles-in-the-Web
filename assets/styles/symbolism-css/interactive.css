@@ -1,5 +1,7 @@
 /* styles for the first example on symbolism.html */
 
+/* inspired by Florin Pop – Codepen Animation: https://codepen.io/FlorinPop17 */
+
 .interactive {
     display: flex;
     flex-direction: column;
