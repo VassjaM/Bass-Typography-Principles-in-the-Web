@@ -1,0 +1,6 @@
+/* styles for the first example on symbolism.html */
+
+.interactive {
+    height: 900px;
+    background-color: var(--color-primary);
+}
