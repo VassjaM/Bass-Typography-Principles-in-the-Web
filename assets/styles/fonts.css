@@ -5,3 +5,11 @@
 
 /* Anton SC */
 @import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+
+/* Satoshi */
+@font-face {
+  font-family: "Satoshi";
+  src:
+    local("Satoshi"),
+    url("Satoshi.otf") format("opentype"),
+}

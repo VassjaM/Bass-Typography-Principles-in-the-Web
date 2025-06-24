@@ -1,6 +1,22 @@
 /* styles for the first example on symbolism.html */
 
 .interactive {
+    display: flex;
+    flex-direction: column;
     height: 900px;
-    background-color: var(--color-primary);
+    background-color: var(--color-bg-example);
+}
+
+.interactive h1 {
+    
+}
+
+.interactive p {
+    text-align: left;
+    padding-top: 50px;
+    padding-left: 50px;
+    font-family: var(--font-family-satoshi);
+    font-size: var(--font-size-paratext);
+    font-weight: 600;
+    letter-spacing: 0.25rem;
 }

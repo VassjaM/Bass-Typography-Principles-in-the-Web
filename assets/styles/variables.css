@@ -9,6 +9,8 @@
         --color-bg-secondary: #303030;
         --color-bg-cards: #28282B;
 
+        --color-bg-example: #F3712B;
+
         /* Accent */
         --color-primary: #C1121F;
         --color-secondary: #F26419;
@@ -24,6 +26,7 @@
     /* fonts */
     --font-family-heading: "Anton SC", "Inter", "Arial", sans-serif;
     --font-family-body: "Inter",  "Arial" , sans-serif;
+    --font-family-satoshi: "Satoshi", "Inter", "Arial", sans-serif;
 
     /* font weight */
     --font-weight-light: 200;
