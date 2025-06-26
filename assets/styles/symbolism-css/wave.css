@@ -4,7 +4,7 @@
     margin-top: 50px;
     width: 100%;
     height: 800px;
-    background-image: url( '/assets/images/dune-bg.svg' );
+    background-image: url( './assets/images/dune-bg.svg' );
 }
 
 .wave svg{
