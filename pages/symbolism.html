@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="../assets/styles/title.css">
     <link rel="stylesheet" href="../assets/styles/info-text.css">
     <link rel="stylesheet" href="../assets/styles/symbolism-css/interactive.css">
+    <link rel="stylesheet" href="../assets/styles/symbolism-css/wave.css">
+
+    <link rel="stylesheet" href="../assets/styles/footer.css">
 
 
 
@@ -72,8 +75,90 @@
         </div>
     </div>
 
+    <div class="wave">
+        <svg viewBox="1800 -30 1920 300" width="100%" height="400" preserveAspectRatio="xMidYMin slice">
 
-    <div style="height: 900px;">placeholder</div>
+        <path id="dragonPath"
+                d="M 0,100
+                Q 100,30 200,100
+                T 400,100
+                T 600,100
+                T 800,100
+                T 1000,100
+                T 1200,100
+                T 1400,100
+                T 1600,100
+                T 1800,100
+                T 2000,100
+                T 2200,100
+                T 2400,100
+                T 2600,100
+                T 2800,100
+                T 3000,100
+                T 3200,100
+                T 3400,100
+                T 3600,100
+                T 3800,100"
+                fill="none"
+                stroke="none"
+                stroke-dasharray="4 4" />
+
+        <defs>
+            <symbol id="dragon-head" viewBox="0 0 900 800">
+            <path d="M276.114 539.227V485.344C293.096 488.613 308.979 496.114 322.293 507.152C335.606 518.19 345.919 532.409 352.278 548.491" stroke="var(--color-text-primary)" stroke-width="25" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <path d="M719.584 331.506H871.581" stroke="var(--color-text-primary)" stroke-width="25" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <path d="M871.581 636.164H709.074" stroke="var(--color-text-primary)" stroke-width="25" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <path d="M30.4629 404.181C34.0857 422.816 42.7554 440.099 55.5267 454.145C68.2981 468.191 84.6807 478.461 102.888 483.835L100.867 437.638" stroke="var(--color-text-primary)" stroke-width="25" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <path d="M88.0151 410.135C93.0134 426.739 102.047 441.847 114.308 454.108C126.569 466.369 141.676 475.402 158.28 480.401L155.123 408.072" stroke="var(--color-text-primary)" stroke-width="25" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <path d="M206.873 549.184V485.344C224.677 488.787 241.26 496.86 254.952 508.75C268.644 520.641 278.962 535.929 284.865 553.075" stroke="var(--color-text-primary)" stroke-width="25" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <path d="M26.8481 366.334V402.256H366.749C386.572 402.524 405.492 410.587 419.415 424.7C433.338 438.813 441.144 457.841 441.144 477.665C441.144 497.49 433.338 516.518 419.415 530.63C405.492 544.743 386.572 552.807 366.749 553.075H26.8481C23.2661 576.704 26.3511 600.863 35.7558 622.833C45.1604 644.804 60.5113 663.712 80.0802 677.431C81.1583 661.959 86.142 647.013 94.5653 633.989C101.808 764.328 232.146 749.843 232.146 749.843C188.705 706.401 188.705 626.747 188.705 626.747C195.072 662.093 213.933 693.973 241.849 716.57C269.764 739.167 304.873 750.976 340.77 749.843C323.896 734.531 311.092 715.266 303.509 693.779C295.926 672.292 293.802 649.258 297.329 626.747C311.814 771.57 434.91 749.843 434.91 749.843C422.239 733.636 413.114 714.949 408.126 694.992C403.137 675.034 402.397 654.251 405.953 633.989C419.263 669.205 445.086 698.279 478.485 715.651C511.884 733.024 550.514 737.476 586.989 728.156C724.57 699.186 731.812 539.823 731.812 539.823C688.371 612.234 543.479 583.264 543.479 583.264C739 568.779 731.812 394.93 731.812 394.93C717.373 410.817 699.518 423.222 679.591 431.212" stroke="var(--color-text-primary)" stroke-width="25" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <path d="M492.85 232.077C492.532 204.437 481.33 178.037 461.672 158.604C442.015 139.171 415.488 128.272 387.847 128.272C360.205 128.272 333.678 139.171 314.021 158.604C294.364 178.037 283.161 204.437 282.844 232.077C282.844 232.921 282.954 233.738 282.968 234.569H158.335" stroke="var(--color-text-primary)" stroke-width="25" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <path d="M719.584 331.506C731.217 303.507 735.429 272.981 731.812 242.878L666.629 289.962L589.523 259.731" stroke="var(--color-text-primary)" stroke-width="25" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <path d="M139.28 286.389C139.28 286.389 182.736 295.847 182.736 380.985C182.736 466.123 334.801 437.762 334.801 437.762" stroke="var(--color-text-primary)" stroke-width="25" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <path d="M144.557 272.402C154.998 273.413 180.852 281.639 220.721 331.506C276.113 400.746 386.898 345.354 386.898 345.354" stroke="var(--color-text-primary)" stroke-width="25" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <path d="M555.305 286.389L705.404 141.566V47.6202C705.404 38.4384 701.757 29.6326 695.264 23.14C688.772 16.6475 679.966 13 670.784 13C661.602 13 652.796 16.6475 646.304 23.14C639.811 29.6326 636.164 38.4384 636.164 47.6202V112.595L580.771 170.522V109.937C580.771 98.9184 576.394 88.3514 568.603 80.5604C560.812 72.7693 550.245 68.3923 539.227 68.3923C528.209 68.3923 517.642 72.7693 509.851 80.5604C502.06 88.3514 497.683 98.9184 497.683 109.937V228.462L480.22 241.036" stroke="var(--color-text-primary)" stroke-width="25" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <path d="M37.3588 220.721H151.481C151.481 238.907 147.899 256.914 140.94 273.715C133.98 290.517 123.78 305.783 110.921 318.642C98.0616 331.501 82.7956 341.701 65.9943 348.661C49.193 355.62 31.1856 359.202 13 359.202V245.08C13 238.62 15.5664 232.424 20.1345 227.856C24.7027 223.288 30.8984 220.721 37.3588 220.721Z" stroke="var(--color-text-primary)" stroke-width="25" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <path d="M331.132 266.42L415.868 259.399C417.148 259.302 418.38 258.871 419.442 258.149C420.503 257.428 421.357 256.44 421.917 255.285C422.478 254.131 422.726 252.849 422.636 251.569C422.547 250.288 422.123 249.054 421.408 247.988L401.896 218.907C401.333 218.069 400.602 217.357 399.751 216.815C398.9 216.272 397.945 215.912 396.948 215.756C395.951 215.6 394.932 215.652 393.955 215.908C392.979 216.164 392.066 216.619 391.274 217.245L330.592 265.035C330.46 265.138 330.365 265.28 330.321 265.441C330.276 265.602 330.285 265.773 330.346 265.929C330.406 266.084 330.516 266.216 330.657 266.305C330.799 266.393 330.965 266.434 331.132 266.42Z" stroke="var(--color-text-primary)" stroke-width="25" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <path d="M26.8481 262.266H40.6962" stroke="var(--color-text-primary)" stroke-width="25" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </symbol>
+        </defs>
+
+
+        <text class="dragon-body"  dominant-baseline="middle">
+            <textPath href="#dragonPath" startOffset="100%">
+            <animate attributeName="startOffset" from="100%" to="0%" dur="10s" repeatCount="indefinite" />
+            DRAGON! {} DRAGON! {} DRAGON! {} DRAGON! +++++
+            </textPath>
+        </text>
+
+ 
+        <use href="#dragon-head" width="200" height="200" transform="translate(-210 -120)">
+            <animateMotion dur="10s" repeatCount="indefinite" rotate="auto" keyPoints="1;0" keyTimes="0;1">
+            <mpath href="#dragonPath" />
+            </animateMotion>
+        </use>
+        </svg>
+    </div>
+
+    <div class="info-text">
+        <div class="info-text-inner">
+            <p class="info-text-paragraph">
+                TODO TEXT: HIER IST ES NOCH NICHT FERTIG Aus der Analyse der ausgewählten Titelsequenzen lassen sich wiederkehrende
+                gestalterische Merkmale erkennen. Diese Merkmale wurden verdichtet und zu
+                Prinzipien zusammengefasst, die die typografische Wirkung der Sequenzen
+                wesentlich bestimmen. Sie bilden die konzeptionelle Grundlage für die
+                gestalterische Übertragung ins Web. Zusammengefasst sind es:
+            </p>
+        </div>
+    </div>
+
+    <div style="height: 800px">Placeholder</div>
+
+    <footer class="footer-outer">
+            <p class="big-footer">Bachelorarbeit:</p>
+            <p class="middle-footer">Die Kunst der Titelsequenz:<br> Die Übertragbarkeit der Prinzipien von Saul Bass’ <br> Typografie auf das Web</p>
+            <p class="small-footer">Technische Hochschule Köln 2025</p>
+    </footer>
 
 
     <script src="../assets/script/title.js"></script>
