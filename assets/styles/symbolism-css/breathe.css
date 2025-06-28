@@ -1,0 +1,160 @@
+/* styles for the third example on symbolism.html */
+
+.breathe {
+    position: relative;
+    background-image: url( '../../images/waterwave-bg.svg')
+}
+
+.breathe-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 927px;
+    width: 100%;
+}
+
+.breathe-inner p {
+    overflow-x: hidden;
+    color: var(--color-text-secondary);
+    font-weight: var(--font-weight-bold);
+}
+
+/* the class for the animation */
+.wave-motion {
+    letter-spacing: 10px;
+    transform-origin: center center;
+    cursor: pointer;
+    animation: wave-animation 2.4s infinite ease-in-out;
+    transition: color 0.2s ease-in;
+}
+
+/* changing color on hover */
+.wave-motion:hover { 
+    animation-play-state: running;
+    color: var(--color-text-primary);
+}
+
+/* manual font-sizes */
+.size-1 {
+    font-size: 28px; 
+}
+
+.size-2 {
+    font-size: 32px; 
+}
+
+.size-3 {
+    font-size: 36px; 
+}
+
+.size-4 {
+    font-size: 40px; 
+}
+
+.size-5 {
+    font-size: 44px; 
+}
+
+.size-6 {
+    font-size: 48px; 
+}
+
+
+/* manual animation delays */
+.motion-1 {
+    animation-delay: 0.1s; 
+}
+
+.motion-2 {
+    animation-delay: 0.2s; 
+}
+
+.motion-3 {
+    animation-delay: 0.4s; 
+}
+
+.motion-4 {
+    animation-delay: 0.6s; 
+}
+
+.motion-5 {
+    animation-delay: 0.8s; 
+}
+
+.motion-6 {
+    animation-delay: 1s; 
+}
+
+/* keyframes for the breathe animation -> extend letter spacing and change position and angle of text */
+@keyframes wave-animation {
+    0% {
+        letter-spacing: 10px;
+        text-indent: 10px;
+        transform: scaleX(1) skewX(0deg) translateY(0px);
+
+    }
+    40% {
+        letter-spacing: 30px;
+        text-indent: 30px;
+        transform: scaleX(1.05) skewX(5deg) translateY(-5px);
+
+    }
+    80% {
+        letter-spacing: 10px;
+        text-indent: 10px;
+        transform: scaleX(1) skewX(0deg) translateY(0px);
+
+    }
+    100% {
+        letter-spacing: 10px;
+        text-indent: 10px;
+        transform: scaleX(1) skewX(0deg) translateY(0px);
+
+    }
+}
+
+/* class for the squid animation */
+.squid {
+    position: absolute;
+    animation: squid-animation 2s ease-out infinite;
+    transform-origin: center;
+}
+
+/* squid animation with stretch and compress */
+@keyframes squid-animation {
+  0% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(0.8, 1.2);
+  }
+  75% {
+    transform: scale(1.2, 0.8);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+/* position of the squids and animation delays*/
+.n-1{
+    top: 10vh;
+    left: 20vw;
+    height: 10%;
+    animation-delay: 0.1s; 
+}
+
+.n-2{
+    top: 65vh;
+    left: 10vw;
+    height: 25%;
+    animation-delay: 0.8s; 
+}
+
+.n-3{
+    top: 40vh;
+    left: 70vw;
+    height: 40%;
+    animation-delay: 0.4s; 
+}
