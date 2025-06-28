@@ -36,7 +36,7 @@
 }
 
 
-/* first example card */
+/* first example card after its a mad mad mad world */
 .card-left-first {
     grid-area: example;
     background-color: var(--color-bg-cards);
@@ -53,6 +53,192 @@
 }
 
 .card-left-first:hover {
+    outline: 3px solid var(--color-bg-cards);
+}
+
+.a-group {
+  transform: rotate(27deg) translateX(10px);
+  display: flex;
+  flex-direction: column;
+}
+
+/* formatting of text */
+.a-layer {
+    font-family: var(--font-family-heading);   
+    color: var(--color-text-secondary);
+    font-size: 7rem;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-bottom: 0.6rem;
+}
+
+/* formatting of highlight text */
+.a-highlight {
+    color: var(--color-primary);
+    font-size: 0px;
+}
+
+.a-highlight span {
+    display: inline-block;
+    animation-duration: 2.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    transform-origin: center;
+    font-size: 7rem;
+}
+
+/* animation classes for every letter */
+.a-highlight span:nth-child(1) {
+    animation-name: bounce;
+}
+
+.a-highlight span:nth-child(2) {
+    animation-name: wiggle;
+}
+
+.a-highlight span:nth-child(3) {
+    animation-name: squish;
+}
+
+.a-highlight span:nth-child(4) {
+    animation-name: rotate-shake;
+}
+
+.a-highlight span:nth-child(5) {
+    animation-name: pop;
+}
+
+.a-highlight span:nth-child(6) {
+    animation-name: bounce;
+}
+
+.a-highlight span:nth-child(7) {
+    animation-name: wiggle;
+}
+
+/* animation keyframes */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0); 
+    }
+    50% {
+        transform: translateY(-10px); 
+    }
+}
+
+@keyframes wiggle {
+    0%, 100% {
+        transform: rotate(0deg); 
+    }
+    25% {
+        transform: rotate(10deg); 
+    }
+    75% { 
+        transform: rotate(-10deg); 
+    }
+}
+
+@keyframes squish {
+    0%, 100% {
+        transform: scale(1); 
+    }
+    50% {
+        transform: scale(1.3, 0.7); 
+    }
+}
+
+@keyframes rotate-shake {
+    0%, 100% {
+        transform: rotate(0deg); 
+    }
+    30% {
+        transform: rotate(10deg); 
+    }
+    70% {
+        transform: rotate(-10deg); 
+    }
+}
+
+@keyframes pop {
+    0%, 100% {
+        transform: scale(1); opacity: 1; 
+    }
+    50% {
+        transform: scale(1.2); opacity: 0.6; 
+    }
+}
+
+
+/* second example card after North by Northwest */
+.card-left-second {
+    grid-area: example;
+    background-color: var(--color-bg-cards);
+    border-radius: 30px;
+    height: 550px;
+    width: 465px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    padding: 20px;
+}
+
+.card-left-second:hover {
+    outline: 3px solid var(--color-bg-cards);
+}
+
+.glitch-group {
+  transform: rotate(27deg) translateX(10px);
+  display: flex;
+  flex-direction: column;
+}
+
+.glitch-layer {
+    font-family: var(--font-family-heading);   
+    color: var(--color-text-secondary);
+    font-size: 7rem;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-bottom: 0.6rem;
+}
+
+.glitch-layer.highlight {
+  color: var(--color-primary);
+  animation: glitchMove 1.1s infinite ease-in-out;
+}
+
+@keyframes glitchMove {
+  0%, 100% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+}
+
+/* third example card after psycho */
+.card-left-third {
+    grid-area: example;
+    background-color: var(--color-bg-cards);
+    border-radius: 30px;
+    height: 550px;
+    width: 465px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    padding: 20px;
+}
+
+.card-left-third:hover {
     outline: 3px solid var(--color-bg-cards);
 }
 
