@@ -7,6 +7,7 @@ window.addEventListener('mousemove', handleMouseMove);
 
 //selecting the spans with different classes
 const spansSlow = document.querySelectorAll('.slow');
+const spansMiddle = document.querySelectorAll('.middle');
 const spansFast = document.querySelectorAll('.fast');
 
 let width = window.innerWidth;
@@ -15,15 +16,21 @@ let width = window.innerWidth;
 function handleMouseMove(e) {
   let position = e.pageX / (width/2) - 1;
   let speedSlow = 100 * position;
+  let speedMiddle = 150 * position;
   let speedFast = 200 * position;
 
-  //slow class movement
-  spansSlow.forEach((span) => {
+//slow class movement
+spansSlow.forEach((span) => {
     span.style.transform = `translate(${speedSlow}px)`;
-  });
+});
 
-  //fast class movement
-  spansFast.forEach((span) => {
+//middle class movement
+spansMiddle.forEach((span) => {
+    span.style.transform = `translate(${speedMiddle}px)`;
+});
+
+//fast class movement
+spansFast.forEach((span) => {
     span.style.transform = `translate(${speedFast}px)`
-  })
+});
 }

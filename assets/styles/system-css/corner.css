@@ -6,8 +6,7 @@
     padding-top: 300px;
 }
 
-/* style for every line
- */
+/* style for every line */
 .corner-inner {
     width: 100%;
     display: flex;
@@ -15,12 +14,14 @@
     align-items: center;
 }
 
+/* style for left and right text */
 .left-text, .right-text {
     width: 950px;
     overflow: hidden;
     display: inline-block;
 }
 
+/* position and color of left and right text */
 .left-text {
     color: var(--color-accent);
     transform: skew(0deg, -15deg);
@@ -52,6 +53,7 @@
     transition: ease-out .6s;
 }
 
+/* floor as polygon under text */
 .floor-triangle {
     position: absolute;
     transform: translateY(-600px);
