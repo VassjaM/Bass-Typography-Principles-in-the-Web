@@ -2,10 +2,8 @@
 
 .corner {
     background-color: var(--color-text-primary);
-    height: 900px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 1080px;
+    padding-top: 300px;
 }
 
 /* style for every line */
@@ -52,4 +50,6 @@
   line-height: 0.8;
   transition: ease-out .6s;
 }
+
+
 
