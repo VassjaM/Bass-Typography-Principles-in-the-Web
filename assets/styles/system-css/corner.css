@@ -1,0 +1,55 @@
+/* styles for the first example on system.html */
+
+.corner {
+    background-color: var(--color-text-primary);
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* style for every line */
+.corner-inner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-text, .right-text {
+    width: 950px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.left-text {
+  color: var(--color-accent);
+  transform: skew(0deg, -15deg);
+}
+
+.right-text {
+  color: var(--color-bg-primary);
+  transform: skew(0deg, 15deg);
+}
+
+.left-text .text-content {
+  width: 100vw;
+  text-align: center;
+}
+
+.right-text .text-content {
+  width: 100vw;
+  text-align: center;
+  transform: translate(-950px);
+}
+
+/* style for the text */
+.text-content span {
+  display: inline-block;
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-title-heading);
+  text-transform: uppercase;
+  line-height: 0.8;
+  transition: ease-out .6s;
+}
+
