@@ -2,8 +2,8 @@
 
 .corner {
     background-color: var(--color-text-primary);
-    height: 1000px;
-    padding-top: 300px;
+    height: 950px;
+    padding-top: 220px;
 }
 
 /* style for every line */
