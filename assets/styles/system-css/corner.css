@@ -23,7 +23,7 @@
 
 /* position and color of left and right text */
 .left-text {
-    color: var(--color-accent);
+    color: var(--color-text-example);
     transform: skew(0deg, -15deg);
 }
 
