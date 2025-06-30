@@ -40,7 +40,7 @@
     transition: opacity 0.4s ease;
 }
 
-/* panel for the aniamtion */
+/* panels for the animation */
 .reveal-panel {
     position: absolute;
     top: 0;
@@ -110,7 +110,7 @@
 }
 
 
-/* active state of wrapper */
+/* active state of wrapper-panel */
 .reveal-wrapper.active .reveal-panel {
     animation: slideReveal 1.6s forwards;
 }
@@ -127,12 +127,13 @@
     animation: slideRevealBottom 1.6s forwards;
 }
 
+/* active state of wrapper-text */
 .reveal-wrapper.active .reveal-text {
     animation: showText 0.4s ease-out forwards;
     animation-delay: 0.8s;
 }
 
-/* closed state of wrapper */
+/* closed state of wrapper-panel */
 .reveal-wrapper.closing .reveal-panel {
     animation: slideCover 1.6s forwards;
 }
@@ -149,12 +150,14 @@
     animation: slideCoverBottom 1.6s forwards;
 }
 
+/* closed state of wrapper-text */
 .reveal-wrapper.closing .reveal-text {
     animation: hideText 0.1s ease-out backwards;
     animation-delay: 0.8s; 
 }
 
 /* animations for the panel */
+/* slide from left side */
 @keyframes slideReveal {
     0% {
         transform: translateX(0%) scaleX(1);
@@ -167,6 +170,7 @@
     }
 }
 
+/* slide back to left */
 @keyframes slideCover {
     0% {
         transform: translateX(0%) scaleX(1);
@@ -179,6 +183,7 @@
     }
 }
 
+/* slide from top */
 @keyframes slideRevealTop {
     0% { 
         transform: translateY(-100%) scaleY(1); 
@@ -191,6 +196,7 @@
       }
 }
 
+/* slide to bottom */
 @keyframes slideCoverTop {
     0% { 
         transform: translateY(-100%) scaleY(1); 
@@ -203,6 +209,7 @@
       }
 }
 
+/* slide from right */
 @keyframes slideRevealRight {
     0% {
          transform: translateX(100%) scaleX(1); 
@@ -215,6 +222,7 @@
         }
 }
 
+/* slide to left */
 @keyframes slideCoverRight {
     0% {
          transform: translateX(100%) scaleX(1); 
@@ -227,6 +235,7 @@
         }
 }
 
+/* slide from bottom */
 @keyframes slideRevealBottom {
     0% {
         transform: translateY(100%) scaleY(1);
@@ -239,6 +248,7 @@
     }
 }
 
+/* slide back to bottom */
 @keyframes slideCoverBottom {
     0% {
         transform: translateY(0%) scaleY(0);
@@ -251,7 +261,8 @@
     }
 }
 
-/* animations fpor the text */
+/* animations for the text */
+/* text appears */
 @keyframes showText {
     from {
         opacity: 0;
@@ -261,6 +272,7 @@
     }
 }
 
+/* text disappears */
 @keyframes hideText {
     from {
         opacity: 1;
