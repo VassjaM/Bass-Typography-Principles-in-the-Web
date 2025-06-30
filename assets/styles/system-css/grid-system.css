@@ -14,7 +14,7 @@
     position: relative;
     min-width: 1200px;
     height: 900px;
-    background-color: rgb(73, 73, 73);
+    background-color: var(--color-bg-example-system-1);
     border-radius: 30px;
 }
 
@@ -29,7 +29,7 @@
     transform: translate(-50%, -50%);
     background-size: 80px 80px;
     background-repeat: repeat;
-    background-image: linear-gradient(to right, white 3px, transparent 3px);
+    background-image: linear-gradient(to right, var(--color-bg-example-system-2) 3px, transparent 3px);
     opacity: 0.08;
     z-index: 1;
 }
