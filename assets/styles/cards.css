@@ -118,7 +118,7 @@
     animation-name: wiggle;
 }
 
-/* animation keyframes */
+/* animation keyframes for every letter */
 @keyframes bounce {
     0%, 100% {
         transform: translateY(0); 
@@ -191,16 +191,19 @@
     outline: 3px solid var(--color-bg-cards);
 }
 
-.glitch-group {
-  transform: rotate(27deg) translateX(10px);
+/* placing of the text */
+.b-group {
+  transform: translateX(-300px) translateY(10px);
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
-.glitch-layer {
+/* formatting of the text */
+.b-layer {
     font-family: var(--font-family-heading);   
     color: var(--color-text-secondary);
-    font-size: 7rem;
+    font-size: 5.6rem;
     font-weight: bold;
     line-height: 1;
     letter-spacing: 2px;
@@ -208,18 +211,41 @@
     padding-bottom: 0.6rem;
 }
 
-.glitch-layer.highlight {
-  color: var(--color-primary);
-  animation: glitchMove 1.1s infinite ease-in-out;
+/* formatting of the highlight text */
+.b-layer.highlight {
+    color: var(--color-primary);
+    animation: slideInHighlight 6s ease-out infinite;
+    transform-origin: left center;
 }
 
-@keyframes glitchMove {
-  0%, 100% {
-    transform: translateX(-10px);
-  }
-  50% {
-    transform: translateX(10px);
-  }
+/* animation for the highlight text -> text flies from right into view, stops with recoil and flies into left side */
+@keyframes slideInHighlight {
+    0% {
+        transform: translateX(100vw) scaleX(1);
+        animation-timing-function: ease-out;
+    }
+    38% {
+        transform: translateX(360px) scaleX(1);
+        animation-timing-function: ease-out;
+    }
+    43% {
+        transform: translateX(360px) scaleX(0.6);
+        animation-timing-function: ease-in;
+    }
+    50% {
+        transform: translateX(390px) scaleX(1.1);
+        animation-timing-function: ease-out;
+    }
+    55% {
+        transform: translateX(420px) scaleX(0.95);
+        animation-timing-function: ease-in;
+    }
+    60% {
+        transform: translateX(420px) scaleX(1);
+    }
+    100% {
+        transform: translateX(-100vw) scaleX(1);
+    }
 }
 
 /* third example card after psycho */
