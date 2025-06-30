@@ -1,0 +1,116 @@
+/* styles for the second example on system.html */
+
+.reveal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    height: 900px;;
+}
+
+.reveal-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 1200px;
+}
+
+/* boxes for the text */
+.reveal-wrapper {
+    flex: 0 1 auto;
+    position: relative;
+    overflow: hidden;
+    width: max-content;
+    padding: 1rem 2rem;
+    border: 1px solid var(--color-stroke-example);
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+/* text inside boxes */
+.reveal-text {
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--color-text-primary);
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+/* panel for the aniamtion */
+.reveal-panel {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: crimson;
+    z-index: 2;
+    transform-origin: left;
+}
+
+/* active state of wrapper */
+.reveal-wrapper.active .reveal-panel {
+    animation: slideReveal 1.6s forwards;
+}
+
+.reveal-wrapper.active .reveal-text {
+    animation: showText 0.4s ease-out forwards;
+    animation-delay: 0.8s;
+}
+
+/* closed state of wrapper */
+.reveal-wrapper.closing .reveal-panel {
+    animation: slideCover 1.6s forwards;
+}
+
+.reveal-wrapper.closing .reveal-text {
+    animation: hideText 0.1s ease-out backwards;
+    animation-delay: 0.8s; 
+}
+
+/* animations for the panel */
+@keyframes slideReveal {
+    0% {
+        transform: translateX(0%) scaleX(1);
+    }
+    50% {
+        transform: translateX(100%) scaleX(1);
+    }
+    100% {
+        transform: translateX(100%) scaleX(0);
+    }
+}
+
+@keyframes slideCover {
+    0% {
+        transform: translateX(0%) scaleX(1);
+    }
+    50% {
+        transform: translateX(100%) scaleX(1);
+    }
+    100% {
+        transform: translateX(100%) scaleX(0);
+    }
+}
+
+/* animations fpor the text */
+@keyframes showText {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes hideText {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
