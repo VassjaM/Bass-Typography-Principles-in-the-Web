@@ -214,14 +214,14 @@
 /* formatting of the highlight text */
 .b-layer.highlight {
     color: var(--color-accent);
-    animation: slideInHighlight 6s ease-out infinite;
+    animation: slideInHighlight 4s ease-out infinite;
     transform-origin: left center;
 }
 
 /* animation for the highlight text -> text flies from right into view, stops with recoil and flies into left side */
 @keyframes slideInHighlight {
     0% {
-        transform: translateX(100vw) scaleX(1);
+        transform: translateX(40vw) scaleX(1);
         animation-timing-function: ease-out;
     }
     38% {
@@ -244,7 +244,7 @@
         transform: translateX(420px) scaleX(1);
     }
     100% {
-        transform: translateX(-100vw) scaleX(1);
+        transform: translateX(-20vw) scaleX(1);
     }
 }
 
