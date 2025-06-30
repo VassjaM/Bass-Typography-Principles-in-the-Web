@@ -16,6 +16,13 @@
             --color-secondary: #F26419;
             --color-accent: #960875;
 
+            --color-example-1: rgb(220, 20, 60);
+            --color-example-2: rgb(20, 220, 187);
+            --color-example-3: rgb(63, 20, 220);
+            --color-example-4: rgb(220, 127, 20);
+            --color-example-5: rgb(53, 220, 20);
+            --color-example-6: rgb(213, 20, 220);
+
         /* Text */
             --color-text-primary: #FFFFFF;
             --color-text-secondary: #AAAAAA;
