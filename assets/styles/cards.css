@@ -213,7 +213,7 @@
 
 /* formatting of the highlight text */
 .b-layer.highlight {
-    color: var(--color-primary);
+    color: var(--color-accent);
     animation: slideInHighlight 6s ease-out infinite;
     transform-origin: left center;
 }
