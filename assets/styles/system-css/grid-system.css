@@ -1,0 +1,145 @@
+/* styles for the third example on system.html */
+
+.grid-system {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* outer box */
+.grid-system-inner {
+    overflow: hidden;
+    position: relative;
+    min-width: 1200px;
+    height: 900px;
+    background-color: rgb(73, 73, 73);
+    border-radius: 30px;
+}
+
+/* grid lines */
+.grid-vertical,
+.grid-horizontal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200vw;
+    height: 200vh;
+    transform: translate(-50%, -50%);
+    background-size: 80px 80px;
+    background-repeat: repeat;
+    background-image: linear-gradient(to right, white 3px, transparent 3px);
+    opacity: 0.08;
+    z-index: 1;
+}
+
+/* rotate and skew horizontal lines */
+.grid-horizontal {
+    transform: translate(-50%, -50%) rotate(-110deg);
+    transform-origin: center;
+}
+
+/* styles for the text */
+.grid-system-inner h2{
+    position: relative;
+    font-size: var(--font-size-example);
+    color: var(--color-text-primary);
+    white-space: nowrap;
+    transform: rotate(-20deg) translateX(80vw) translateY(-24px) skewX(-20deg);
+    animation: move-text 12s linear infinite;
+    z-index: 2;
+}
+
+.text {
+    text-align: left;
+    position: relative;
+    font-size: var(--font-size-paratext);
+    color: var(--color-text-primary);
+    font-weight: var(--font-weight-bold);
+    white-space: nowrap;
+    transform: rotate(-20deg) translateX(80vw) translateY(-22px) skewX(-20deg);
+    animation: move-paragraph 12s linear infinite;
+    animation-delay: 6s;
+    z-index: 2;
+    line-height: 40px;
+}
+
+/* styles for the rectangle elements */
+.flying-rect {
+  position: absolute;
+  background: var(--color-text-primary);
+  transform: rotate(-20deg) skewX(-20deg);
+  z-index: 2;
+  border-radius: 8px;
+}
+
+.flying-rect-vertical {
+    width: 80px;
+    height: 120px;
+    left: 10%;
+    top: -100px;
+    animation: fly-vertical 12s linear infinite;
+}
+
+.flying-rect-horizontal {
+    width: 400px;
+    height: 60px;
+    top: 67.5%;
+    transform: rotate(-20deg) translateX(80vw) skewX(-20deg);
+    animation: fly-horizontal 8s linear infinite;
+}
+
+/* animation */
+
+/* animation for the title */
+@keyframes move-text {
+    0% {
+        transform: rotate(-20deg) translateX(80vw) translateY(-24px) skewX(-20deg);
+    }
+    58% {
+        transform: rotate(-20deg) translateX(10vw) translateY(-24px) skewX(-20deg);
+    }
+    65% {
+        transform: rotate(-20deg) translateX(10vw) translateY(-24px) skewX(-20deg);
+    }
+    100% {
+        transform: rotate(-20deg) translateX(-40vw) translateY(-24px) skewX(-20deg);
+    }
+}
+
+/* animation for the paragraph */
+@keyframes move-paragraph {
+    0% {
+        transform: rotate(-20deg) translateX(80vw)  skewX(-20deg);
+    }
+    50% {
+        transform: rotate(-20deg) translateX(20vw)  skewX(-20deg);
+    }
+    58% {
+        transform: rotate(-20deg) translateX(20vw)  skewX(-20deg);
+    }
+    100% {
+        transform: rotate(-20deg) translateX(-40vw) skewX(-20deg);
+    }
+}
+
+/* animation for the vertical rectangle */
+@keyframes fly-vertical {
+    0% {
+        top: -100px;
+    }
+    100% {
+        top: 1000px;
+    }
+}
+
+/* animation for the horizontal rectangle */
+@keyframes fly-horizontal {
+    0% {
+        transform: rotate(-20deg) translateX(80vw) translateY(0px) skewX(-20deg);
+    }
+    100% {
+        transform: rotate(-20deg) translateX(-40vw) translateY(0px) skewX(-20deg);
+    }
+}

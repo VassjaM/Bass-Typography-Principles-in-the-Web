@@ -55,6 +55,8 @@
         --font-size-text: 1.563rem;
         --font-size-prefix: 1.563rem;
 
+        --font-size-example: 5rem;
+
     /* letter spacing */
         --font-ls-navigation: -1px;
         --font-ls-prefix: 0.01em;
