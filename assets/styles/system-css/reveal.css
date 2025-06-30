@@ -11,9 +11,10 @@
 
 .reveal-grid {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
-    max-width: 800px;
+    max-width: 1200px;
 }
 
 /* boxes for the text */
@@ -31,7 +32,7 @@
 /* text inside boxes */
 .reveal-text {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 3.75rem;
     color: var(--color-text-primary);
     position: relative;
     z-index: 1;
