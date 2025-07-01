@@ -48,6 +48,7 @@
         --font-weight-regular: 400;
         --font-weight-medium: 500;
         --font-weight-bold: 600;
+        --font-weight-boldest: 900;
 
     /* font size */
         --font-size-title-heading: 10rem;

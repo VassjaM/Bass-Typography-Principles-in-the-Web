@@ -1,1 +1,61 @@
 /* styles for the first example on glitch.html */
+
+.split {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* styles for the text */
+.split-inner {
+    position: relative;
+    font-size: var(--font-size-principle);
+    font-family: var(--font-family-satoshi);
+    font-weight: var(--font-weight-boldest);
+    text-transform: uppercase;
+}
+
+/* adding the same text again */
+.split-inner::after,
+.split-inner::before {
+    content: "~Fragmented Text~";
+    left: 0;
+    position: absolute;
+    overflow: hidden;
+}
+
+/* lower half of the text-body */
+.split-inner::before {
+    height: 42.5%;
+    color: var(--color-bg-primary);
+    -webkit-text-stroke: 2px var(--color-bg-primary);
+}
+
+/* upper half of the text-body */
+.split-inner::after {
+    height: 40.5%;
+    color: var(--color-text-primary);
+    animation: text-split 3s infinite ease-in-out;
+}
+
+/* animation for the upper half of the text-body */
+@keyframes text-split {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-0.5rem);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    75% {
+        transform: translateX(0.5rem);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
