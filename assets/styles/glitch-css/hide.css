@@ -16,14 +16,17 @@
     height: 100px;
 }
 
+/* left position of text */
 .hide-inner.left {
     align-self: flex-start;
 }
 
+/* right position of text */
 .hide-inner.center {
     align-self: center;
 }
 
+/* styles for the text-paragraph */
 .hide-inner p {
     position: absolute;
     top: 50%;
@@ -35,6 +38,7 @@
     transition: opacity 0.3s ease;
 }
 
+/* colors for the text-paragraph */
 .p-color-red {
     color: var(--color-primary);
 }
@@ -51,6 +55,7 @@
     color: var(--color-accent-example);
 }
 
+/* styles for the title */
 .hide-inner h2 {
     position: absolute;
     padding: 0;
@@ -66,6 +71,7 @@
     transition: transform 0.3s ease, clip-path 0.3s ease;
 }
 
+/* clip shape for the aniamtion */
 .hide-inner h2.above {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
@@ -74,6 +80,7 @@
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
+/* animation on hover */
 .hide-inner:hover h2.above {
     transform: translate(-50%, -100%);
     clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
