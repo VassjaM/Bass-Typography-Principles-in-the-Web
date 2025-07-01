@@ -38,6 +38,11 @@
     height: 40.5%;
     color: var(--color-text-primary);
     animation: text-split 3s infinite ease-in-out;
+    transition: color 0.3s ease;
+}
+
+.split-inner:hover::after {
+    color: var(--color-accent);
 }
 
 /* animation for the upper half of the text-body */
