@@ -1,0 +1,141 @@
+/* styles for the third example on glitch.html */
+
+/* important for the last example, where lines go out of view */
+body {
+    overflow-x: hidden;
+}
+
+/* outer container for the button and inner container */
+.lines-container {
+    position: relative; 
+    overflow: hidden;   
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* button styling */
+#startBtn {
+    position: relative;
+    padding: 20px 30px;
+    font-size: 1rem;
+    font-family: var(--font-family-body);
+    font-weight: var(--font-weight-bold);
+    background-color: var(--color-secondary);
+    border-radius: 10px;
+    border: none;
+    z-index: 3;
+}
+
+#startBtn:hover {
+    background-color: var(--color-primary);
+}
+
+
+.container {
+    width: 100%;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* container for the animation */
+.inner {
+    width: 1200px;
+    background: var(--color-bg-example-2);
+    color: var(--color-text-primary);
+    font-family: var(--font-family-body);
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+/* container for the text in the animation */
+.text-box {
+    position: relative;
+    width: 1200px;
+    height: 4rem;
+}
+
+/* every text element positioned to far left */
+.part {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--color-text-primary);
+    opacity: 1;
+    transform: translateX(-1200px);
+}
+
+/* different clipping paths for the different text element-positions */
+.top {
+    clip-path: inset(0 0 66.66% 0);
+}
+.middle {
+    clip-path: inset(33.33% 0 33.33% 0);
+    transform: translateX(-900px);
+}
+.bottom {
+    clip-path: inset(66.66% 0 0 0);
+}
+
+/* animations for the different text elements -> animate class tagged with javascript */
+.top.animate {
+    animation: flyIn-text 1s 0s forwards ease-out;
+}
+.middle.animate {
+    animation: flyIn-text 1s 2.6s forwards ease-out;
+}
+.bottom.animate {
+    animation: flyIn-text 1s 0.3s forwards ease-out;
+}
+
+/* animation translating to middle position */
+@keyframes flyIn-text {
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* styles for the animated lines */
+.line {
+    position: absolute;
+    height: 18px;
+    background: #1a1a1a;
+    width: 100%;
+    transform: translateX(-100%);
+    animation: flyIn 2s forwards, flyOut 2s 2s forwards;
+    pointer-events: none;
+}
+
+/* animations for the lines */
+@keyframes flyIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes flyOut {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
