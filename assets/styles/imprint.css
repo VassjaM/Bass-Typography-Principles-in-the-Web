@@ -23,4 +23,5 @@
     color: var(--color-text-primary);
     font-size: var(--font-size-text);
     font-weight: var(--font-weight-middle);
+    padding-bottom: var(--font-size-paratext);
 }
