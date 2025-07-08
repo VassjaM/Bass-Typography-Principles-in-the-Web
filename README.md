@@ -23,14 +23,14 @@ Das Projekt besteht aus:
 - Die Visual Studio Code-Erweiterung **Live-Server** (oder ein beliebiger lokaler HTTP-Server)
 
 ### Lokale Ausführung
-- 1. Repository klonen
+ 1. Repository klonen
 git clone https://github.com/VassjaM/Bass-Typography-Principles-in-the-Web.git
 
-- 2. Lokalen Server der index.html mit Live-Server starten
+ 2. Lokalen Server der index.html mit Live-Server starten
 
-- 3. Im Browser die Developer Tools öffnen
+ 3. Im Browser die Developer Tools öffnen
 
-- 4. Die Bildschirmgröße auf 1920x1080 Pixel einstellen
+ 4. Die Bildschirmgröße auf 1920x1080 Pixel einstellen
 
 ### Github Pages Ausführung
 Webseite ist auch unter diesem Link erreichbar, muss aber trotzdem an die Bildschirmgröße 1920x1080 Pixel angepasst werden: https://vassjam.github.io/Bass-Typography-Principles-in-the-Web/
