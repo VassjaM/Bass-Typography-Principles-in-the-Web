@@ -42,7 +42,7 @@ Webseite ist auch unter diesem Link erreichbar, muss aber trotzdem an die Bildsc
 - Die Prototypen sind nicht responsive umgesetzt, da der Fokus auf der Darstellung von Prinzipien bei der definierten Bildschirmauflösung liegt.
 
 
-## english
+## English
 
 This project is part of my bachelor’s thesis in the Media Informatics program at the Technical University of Applied Sciences Cologne.
 The title of the thesis is: “The Art of the Title Sequence: The Transferability of Saul Bass’s Typographic Principles to the Web: An Investigation into Implementation Using Web Standard Methods for Animation.”
