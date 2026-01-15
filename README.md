@@ -41,6 +41,8 @@ Webseite ist auch unter diesem Link erreichbar, muss aber trotzdem an die Bildsc
 - SVGs wurden als Inline-Code eingebunden, um eine gezielte Kontrolle einzelner animierter Pfade zu ermöglichen.
 - Die Prototypen sind nicht responsive umgesetzt, da der Fokus auf der Darstellung von Prinzipien bei der definierten Bildschirmauflösung liegt.
 
+## Wissenschaftliche Arbeit
+Die zugehörige wissenschaftliche Arbeit kann hier eingesehen werden: https://cnoss.github.io/thesis/works/2025-03-14-vassilij-misenko.html
 
 ## English
 
@@ -89,3 +91,6 @@ Note: The display is optimized for 1920×1080 px and not responsive.
 - Frameworks (e.g., React, Vue, GSAP) were deliberately avoided in order to work exclusively with web standards.
 - SVGs are embedded as inline code to allow precise control over individual animated paths.
 - The prototypes are not implemented responsively, as the focus lies on illustrating typographic principles at a fixed screen resolution.
+
+## Academic Thesis
+The related academic thesis can be accessed here: https://cnoss.github.io/thesis/works/2025-03-14-vassilij-misenko.html
